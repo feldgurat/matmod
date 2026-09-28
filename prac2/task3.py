@@ -1,15 +1,11 @@
 import numpy
 import scipy.linalg as sl
 
-A = numpy.array([[ 8,  5,  2],
-                 [21, 19, 16],
-                 [39, 48, 53]], dtype=float)
+A = numpy.array([[8, 5, 2], [21, 19, 16], [39, 48, 53]], dtype=float)
 b_a = numpy.array([14, 56, 140], dtype=float)
 b_b = numpy.array([15, 56, 140], dtype=float)
 
-B = numpy.array([[6,  3,  1],
-                 [6,  9,  2],
-                 [3, 11, 15]], dtype=float)
+B = numpy.array([[6, 3, 1], [6, 9, 2], [3, 11, 15]], dtype=float)
 b_c = numpy.array([10, 17, 29], dtype=float)
 b_d = numpy.array([10, 17, 28], dtype=float)
 

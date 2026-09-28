@@ -1,5 +1,6 @@
 import numpy
 
+
 def dumat(A, B):
     print("A:", A.shape, " B:", B.shape)
     if A.shape == B.shape:
@@ -24,7 +25,7 @@ B1 = numpy.array([[0, 2, -3], [-2, 0, 6], [3, -6, 0]])
 print("a)")
 dumat(A1, B1)
 
-A2 = numpy.array([[1, 3+2j], [3-2j, 5]])
+A2 = numpy.array([[1, 3 + 2j], [3 - 2j, 5]])
 B2 = numpy.array([[3, 2, 1], [7, 1, 4]])
 print("б)")
 dumat(A2, B2)

@@ -9,9 +9,9 @@ X, Y = numpy.meshgrid(x, y)
 Z = X**2 + Y**2
 
 
-ax = plt.figure().add_subplot(projection='3d')
-ax.plot_surface(X, Y, Z, cmap='viridis')
-ax.set_xlabel('x')
-ax.set_ylabel('y')
-ax.set_zlabel('z')
+ax = plt.figure().add_subplot(projection="3d")
+ax.plot_surface(X, Y, Z, cmap="viridis")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
+ax.set_zlabel("z")
 plt.show()

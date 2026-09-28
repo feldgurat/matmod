@@ -24,5 +24,5 @@ A_inf = max(sum(abs(i) for i in j) for j in A)
 
 print("A:\n" + str(A))
 print(str(A_1) + "\t" + str(sl.norm(A, 1)))
-print(str(A_fro) + "\t" + str(sl.norm(A, 'fro')))
+print(str(A_fro) + "\t" + str(sl.norm(A, "fro")))
 print(str(A_inf) + "\t" + str(sl.norm(A, numpy.inf)))
