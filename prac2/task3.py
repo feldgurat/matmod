@@ -24,5 +24,5 @@ B_inv = sl.inv(B)
 
 cond_A = sl.norm(A, 2) * sl.norm(A_inv, 2)
 cond_B = sl.norm(B, 2) * sl.norm(B_inv, 2)
-print(str(cond_A) + "\t" + str(numpy.linalg.cond(A)))
-print(str(cond_B) + "\t" + str(numpy.linalg.cond(B)))
+print("cond_A: " + str(cond_A) + "\t" + str(numpy.linalg.cond(A)))
+print("cond_B: " + str(cond_B) + "\t" + str(numpy.linalg.cond(B)))
