@@ -13,4 +13,4 @@ if numpy.linalg.matrix_rank(A) == m:
     print(y_i)
     print(y_s)
 else:
-    print("Решений нет")
+    print("Нет решения или бесконечно много решений")
