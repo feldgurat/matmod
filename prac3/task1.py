@@ -4,27 +4,6 @@ import scipy.linalg as sl
 numpy.set_printoptions(suppress=True)
 
 
-def progonka(A, d):
-    n = len(d)
-    a = numpy.concatenate(([0], numpy.diag(A, -1)))
-    b = numpy.diag(A)
-    c = numpy.concatenate((numpy.diag(A, 1), [0]))
-
-    alpha = numpy.zeros(n)
-    beta = numpy.zeros(n)
-    alpha[0] = -c[0] / b[0]
-    beta[0] = d[0] / b[0]
-    for i in range(1, n):
-        z = b[i] + a[i] * alpha[i - 1]
-        alpha[i] = -c[i] / z
-        beta[i] = (d[i] - a[i] * beta[i - 1]) / z
-
-    x = numpy.zeros(n)
-    x[-1] = beta[-1]
-    for i in range(n - 2, -1, -1):
-        x[i] = alpha[i] * x[i + 1] + beta[i]
-    return x
-
 
 def dumat(A, b):
     P, L, U = sl.lu(A)
@@ -58,7 +37,10 @@ def dumat(A, b):
 
 
 A_a = numpy.array(
-    [[7, 1, 1, 0], [1, 5, 2, 1], [2, 3, -3, 3], [3, 4, 5, 5]], dtype=float
+    [[7, 1, 1, 0],
+     [1, 5, 2, 1],
+     [2, 3, -3, 3],
+     [3, 4, 5, 5]], dtype=float
 )
 b_a = numpy.array([7, 0, -1, -2], dtype=float)
 
