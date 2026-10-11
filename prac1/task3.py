@@ -1,6 +1,5 @@
 import numpy
 
-
 n = int(input("n: "))
 A = numpy.random.default_rng().integers(0, 10, size=(n, n))
 

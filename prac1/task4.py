@@ -1,5 +1,5 @@
-import numpy
 import matplotlib.pyplot as plt
+import numpy
 
 a, b = -10, 10
 x = numpy.linspace(a, b, 400)
