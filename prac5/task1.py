@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 from scipy.linalg import lstsq
 
 
-def task4():
+def task1():
     x = numpy.array([1, 3, 4.5, 7, 9])
     y = numpy.array([1.3, 0.8, 0, 1.5, 1.2])
     n = len(x)
@@ -68,4 +68,4 @@ def task4():
 
 
 if __name__ == "__main__":
-    task4()
+    task1()
